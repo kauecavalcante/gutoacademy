@@ -98,7 +98,7 @@ const calculateBmi = (e) => {
         calculateMessage.classList.add('color-red')
 
         // Show message
-        calculateMessage.textContent = 'Fill in the Height and Weight'
+        calculateMessage.textContent = 'Preencha a Altura e o Peso'
 
         // Remove message three seconds
         setTimeout(() => {
@@ -114,13 +114,13 @@ const calculateBmi = (e) => {
               if(bmi < 18.5){
                 // Add color and display message
                 calculateMessage.classList.add('color-green')
-                calculateMessage.textContent = `Your BMI is ${bmi} and you are skinny`
+                calculateMessage.textContent = `Seu IMC é ${bmi} e você é magro`
               } else if(bmi < 25){
                 calculateMessage.classList.add('color-green')
-                calculateMessage.textContent = `Your BMI is ${bmi} and you are healthy`
+                calculateMessage.textContent = `Seu IMC é ${bmi} e você está saudável`
               } else {
                 calculateMessage.classList.add('color-green')
-                calculateMessage.textContent = `Your BMI is ${bmi} and you are overweight`
+                calculateMessage.textContent = `Seu IMC é ${bmi} e você está acima do peso`
               }
 
               // To clear the input field
@@ -151,7 +151,7 @@ const sendEmail = (e) => {
         contactMessage.classList.add('color-red')
 
         // Show message
-        contactMessage.textContent = 'You must enter your email'
+        contactMessage.textContent = 'Você deve inserir seu e-mail'
 
         // Remove message three seconds
         setTimeout(() => {
@@ -163,7 +163,7 @@ const sendEmail = (e) => {
                .then(() => {
                 // Show message and add color
                 contactMessage.classList.add('color-green')
-                contactMessage.textContent = 'You registered successfully'
+                contactMessage.textContent = 'Você se registrou com sucesso'
 
                 // Remove message after three seconds
                 setTimeout(() => {
